@@ -148,7 +148,7 @@ const store = new Vuex.Store({
             return status;
         },
         async logout(context) {
-            await Axios.post("/rest_api/auth/logout/");
+            await Axios.post("/rest_api/auth/logout/", {}, { headers: await http.getHeaders() });
             context.commit('setAuthenticated', false);
             context.commit('setUser', {});
         },
