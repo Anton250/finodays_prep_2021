@@ -9,7 +9,8 @@ __pycache__
 
 package-lock.json
 
-ipython_data
+mounts
+!mounts/db
 
 # local env files
 .env.local

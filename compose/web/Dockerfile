@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   pkg-config
 
 COPY ./backend/requirements.txt .
-RUN chmod +x /dependencies.sh
 
 # Create Python Dependency
 RUN pip3 install -r requirements.txt
